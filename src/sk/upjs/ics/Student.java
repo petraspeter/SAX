@@ -32,7 +32,7 @@ public class Student {
     
     public String vypis() {
         StringBuilder sb = new StringBuilder();
-        sb.append("\t\tMeno: "+meno+" Priezvisko: "+priezvisko+" E-mail: "+email+"\n");
+        sb.append("\t\t"+meno+" "+priezvisko+", E-mail: "+email+"\n");
         return sb.toString();
     }
     
