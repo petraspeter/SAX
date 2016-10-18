@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<InternatMedicka rok="2016/2017" blok="A" poschodie="1">
+    <izba cislo="101">
+        <Student>
+            <Meno>Maťko</Meno>
+            <Priezvisko>Vysoký</Priezvisko>
+            <Email>matko@vysoky.com</Email>
+        </Student>
+        <Student>
+            <Meno>Andrej</Meno>
+            <Priezvisko>Malý</Priezvisko>
+            <Email>andrejmaly10@gmail.com</Email>
+        </Student>
+        <Student>
+            <Meno>Jakub</Meno>
+            <Priezvisko>Ondo</Priezvisko>
+            <Email>jakondo1992@azet.sk</Email>
+        </Student>
+    </izba>
+    <izba cislo="211">
+        <Student>
+            <Meno>Mohamed</Meno>
+            <Priezvisko>Amahar</Priezvisko>
+            <Email>MoAmaralah@UAE.uae</Email>
+        </Student>
+        <Student>
+            <Meno>Roman</Meno>
+            <Priezvisko>Šalianský</Priezvisko>
+            <Email>romcoSal21@gmail.com</Email>
+        </Student>
+    </izba>
+</InternatMedicka>
