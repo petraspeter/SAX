@@ -38,7 +38,7 @@ public class Internat {
         return rokZAR + "/" + (rokZAR + 1);
     }
     
-    public List<Izba> getStudenti() {
+    public List<Izba> getIzby() {
         return izby;
     }
     
@@ -50,7 +50,7 @@ public class Internat {
     
     public void vypis() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Akademicky rok: "+getAkademickyRok()+", blok: "+getBlok()+", poschodie: "+getPoschodie());
+        sb.append("Akademicky rok: "+getAkademickyRok()+", blok: "+getBlok()+", poschodie: "+getPoschodie()+"\n");
         for(Izba izba : izby) {
             sb.append(izba.vypis());
         }

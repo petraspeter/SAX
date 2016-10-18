@@ -28,17 +28,13 @@ public class SAXHandler extends DefaultHandler {
             Izba izba = new Izba();
             short cislo = Short.parseShort(attributes.getValue("cislo"));
             izba.setCisloIzby(cislo);
+            ((Internat) stack.peek()).getIzby().add(izba);
             stack.push(izba);
             return;
         }
         if ("Student".equals(name)) {
             Student student = new Student();
-            String meno = attributes.getValue("Meno");
-            String priezvisko = attributes.getValue("Priezvisko");
-            String email = attributes.getValue("Email");
-            student.setMeno(meno);
-            student.setPriezvisko(priezvisko);
-            student.setEmail(email);
+            ((Izba) stack.peek()).getStudenti().add(student);
             stack.push(student);
             return;
         }
@@ -76,10 +72,10 @@ public class SAXHandler extends DefaultHandler {
                 case "Priezvisko":
                     student.setPriezvisko(sb.toString());
                     break;
-                case "EMail":
+                case "Email":
                     student.setEmail(sb.toString());
                     break;
-            }            
+            }
             sb.setLength(0);
         }
     }

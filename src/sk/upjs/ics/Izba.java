@@ -24,7 +24,7 @@ public class Izba {
     
     public String vypis() {
         StringBuilder sb = new StringBuilder();
-        sb.append("\tIzba: "+cisloIzby);
+        sb.append("\tIzba: "+cisloIzby+"\n");
         for (Student student : studenti) {
             sb.append(student.vypis());
         }
